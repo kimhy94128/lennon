@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lennon/static/css/main.15d2ea08.chunk.css",
-    "main.js": "/lennon/static/js/main.188de10f.chunk.js",
-    "main.js.map": "/lennon/static/js/main.188de10f.chunk.js.map",
+    "main.js": "/lennon/static/js/main.15fa899d.chunk.js",
+    "main.js.map": "/lennon/static/js/main.15fa899d.chunk.js.map",
     "runtime-main.js": "/lennon/static/js/runtime-main.a92d8d06.js",
     "runtime-main.js.map": "/lennon/static/js/runtime-main.a92d8d06.js.map",
     "static/js/2.4be5621c.chunk.js": "/lennon/static/js/2.4be5621c.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.a92d8d06.js",
     "static/js/2.4be5621c.chunk.js",
     "static/css/main.15d2ea08.chunk.css",
-    "static/js/main.188de10f.chunk.js"
+    "static/js/main.15fa899d.chunk.js"
   ]
 }
