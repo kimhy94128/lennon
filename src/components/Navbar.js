@@ -1,0 +1,34 @@
+import React, { useState } from 'react'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
+
+function Navbar() {
+  const [ responsive, setResponsive ] = useState("")
+  const navClick = () => {
+    
+  }
+  return (
+<>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+          <Link className="navbar-brand js-scroll-trigger" to="/">
+            <img 
+              src="data:image/jpeg;base64,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" alt="" />
+          </Link>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+            <i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav text-uppercase ml-auto" onClick={navClick}>
+                  <li class="nav-item"><Link className="nav-link js-scroll-trigger" to='/about' >About</Link></li>
+                  <li class="nav-item"><Link className="nav-link js-scroll-trigger" to='/space'>Space</Link></li>
+                  <li class="nav-item"><Link className="nav-link js-scroll-trigger" to='/contact'>Contact</Link></li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+</>
+  )
+}
+
+export default Navbar
