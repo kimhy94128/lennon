@@ -26,6 +26,7 @@ const contentsList = [
     desc: '연극촬영',
     img: '연극.1.JPG',
   },
+  
 ]
 
 const contents = () => {
