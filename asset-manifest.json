@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/lennon/static/css/main.15d2ea08.chunk.css",
-    "main.js": "/lennon/static/js/main.302050d4.chunk.js",
-    "main.js.map": "/lennon/static/js/main.302050d4.chunk.js.map",
+    "main.js": "/lennon/static/js/main.fb87ff62.chunk.js",
+    "main.js.map": "/lennon/static/js/main.fb87ff62.chunk.js.map",
     "runtime-main.js": "/lennon/static/js/runtime-main.a92d8d06.js",
     "runtime-main.js.map": "/lennon/static/js/runtime-main.a92d8d06.js.map",
-    "static/js/2.4be5621c.chunk.js": "/lennon/static/js/2.4be5621c.chunk.js",
-    "static/js/2.4be5621c.chunk.js.map": "/lennon/static/js/2.4be5621c.chunk.js.map",
+    "static/js/2.b9886e95.chunk.js": "/lennon/static/js/2.b9886e95.chunk.js",
+    "static/js/2.b9886e95.chunk.js.map": "/lennon/static/js/2.b9886e95.chunk.js.map",
     "index.html": "/lennon/index.html",
     "static/css/main.15d2ea08.chunk.css.map": "/lennon/static/css/main.15d2ea08.chunk.css.map",
-    "static/js/2.4be5621c.chunk.js.LICENSE.txt": "/lennon/static/js/2.4be5621c.chunk.js.LICENSE.txt"
+    "static/js/2.b9886e95.chunk.js.LICENSE.txt": "/lennon/static/js/2.b9886e95.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a92d8d06.js",
-    "static/js/2.4be5621c.chunk.js",
+    "static/js/2.b9886e95.chunk.js",
     "static/css/main.15d2ea08.chunk.css",
-    "static/js/main.302050d4.chunk.js"
+    "static/js/main.fb87ff62.chunk.js"
   ]
 }

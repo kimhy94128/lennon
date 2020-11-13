@@ -34,6 +34,15 @@
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
     });
+    document.querySelector('.navbar-nav > li').addEventListener('click',
+        function(){
+            alert()
+        })
+    // document.querySelectorAll('.nav-ite').forEach(ele => {
+    //     ele.addEventListener('click', function(){
+    //         alert()
+    //     })
+    // })
 
     // Activate scrollspy to add active class to navbar items on scroll
     $("body").scrollspy({
