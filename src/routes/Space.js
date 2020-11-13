@@ -1,35 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 import Header from '../components/Header'
 import Modal from '../components/Modal'
 
 
-const contentsList = [
-  {
-    title: 'Art Performence',
-    desc: '행위예술가 이뤄라 개인전시전',
-    img: '행위예술가 이뤄라 개인전시전.4.jpg',
-  },
-  {
-    title: 'Presentation',
-    desc: '대관',
-    img: '넓은강연장.jpg',
-  },
-  {
-    title: 'Performence',
-    desc: '생활문화축제',
-    img: '생활문화축제.2.JPG',
-  },
-  {
-    title: 'Drama Recording',
-    desc: '연극촬영',
-    img: '연극.1.JPG',
-  },
-  
-]
-
-const contents = () => {
+const contents = (contentsList) => {
   return (
     contentsList.map((item, i) => (
     <div className="col-lg-4 col-sm-6 mb-4" key={i}>
@@ -49,7 +25,7 @@ const contents = () => {
     ))
   )
 }
-const modal = () => {
+const modal = (contentsList) => {
   return (
     contentsList.map((item, i) => (
       <Modal
@@ -64,22 +40,26 @@ const modal = () => {
 
 function Space() {
   useEffect(() => {
-    axios.get('/api')
+    axios.get('/api/space')
       .then(response => {
-        console.log(response);
+        setContentsList(response.data.contents);
       })
   }, [])
+  const [ contentsList, setContentsList ] = useState([])
   return (
     <>
       <section className="page-section bg-light" id="portfolio">
         <div className="container">
           <Header title="SPACE" />
           <div className="row">
-            {contents()}
+            {contentsList !== 0 ? 
+              contents(contentsList)
+              : <div> Loading.. </div>
+            }
           </div>
         </div>
       </section>
-      {modal()}
+      {modal(contentsList)}
     </>
   )
 }

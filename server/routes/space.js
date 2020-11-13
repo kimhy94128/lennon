@@ -11,7 +11,41 @@ fs.readdir('uploads', (err) => {
 })
 
 router.get('/', (req, res) => {
-  res.json({success: true});
+  const space = [
+    {
+      title: 'Art Performence',
+      desc: '행위예술가 이뤄라 개인전시전',
+      img: '행위예술가 이뤄라 개인전시전.4.jpg',
+    },
+    {
+      title: 'Presentation',
+      desc: '대관',
+      img: '넓은강연장.jpg',
+    },
+    {
+      title: 'Performence',
+      desc: '생활문화축제',
+      img: '생활문화축제.2.JPG',
+    },
+    {
+      title: 'Drama Recording',
+      desc: '연극촬영',
+      img: '연극.1.JPG',
+    },
+    {
+      title: 'Performence',
+      desc: '생활문화축제',
+      img: '생활문화축제.2.JPG',
+    },
+    {
+      title: 'Drama Recording',
+      desc: '연극촬영',
+      img: '연극.1.JPG',
+    }
+  ];
+  res.json({success: true, contents: space});
 })
+
+
 
 module.exports = router;

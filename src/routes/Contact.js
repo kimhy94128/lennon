@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../components/Header'
+import axios from 'axios'
 
 function Contact() {
     const [ phone, setPhone ] = useState('')
@@ -24,7 +25,7 @@ function Contact() {
         const inputs = {
             name, phone, email, message
         }
-        console.log(inputs);
+        axios.put('/api/contact', inputs)
         setName('')
         setEmail('')
         setPhone('')
